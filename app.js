@@ -7,7 +7,18 @@ const todoList = document.querySelector('.todo-list');
 todoButton.addEventListener('click', addTodo);
 
 //functions
-function addTodo(event){
+function addTodo(event) {
     //prevent form from submitting
     event.preventDefault();
+    //Todo DIV
+    const todoDiv = document.createElement('div');
+    todoDiv.classList.add("todo");
+    //Create LI
+    const newTodo = document.createElement('li');
+    newTodo.innerText = 'hey';
+    newTodo.classList.add('todo-item');
+    todoDiv.appendChild(newTodo);
+    //Checked Button
+    const checkedButton = document.createElement('button');
 }
+
